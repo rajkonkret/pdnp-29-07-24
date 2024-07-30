@@ -32,3 +32,32 @@ print(type(tupla_imona))  # <class 'tuple'>
 
 print(tupla_imona.index("Radek"))  # indeks 0
 print(tupla_imona.count("Olek"))  # wystepuje 1 raz w kolekcji
+
+# rozpakowanie tupli
+tup = 1, 2
+a, b = tup
+print(a, b)  # 1 2
+
+tup_1 = 1, 2, 3
+# a, b = tup_1  # ValueError: too many values to unpack (expected 2)
+
+a, *b = tup_1  # * worek na pozostałe dane
+print(a, b)  # 1 [2, 3]
+
+print(tupla_imona)  # ('Radek', 'Tomek', 'Zenek', 'Olek', 'Robert', 'Michał')
+name1, name2, *name3 = tupla_imona  # Radek Tomek ['Zenek', 'Olek', 'Robert', 'Michał']
+print(name1, name2, name3)
+
+name1, *name2, name3 = tupla_imona  # Radek ['Tomek', 'Zenek', 'Olek', 'Robert'] Michał
+print(name1, name2, name3)
+
+*name1, name2, name3 = tupla_imona  # ['Radek', 'Tomek', 'Zenek', 'Olek'] Robert Michał
+print(name1, name2, name3)
+
+# sortowanie krotki zwraca listę
+print(sorted(tupla_imona))  # ['Michał', 'Olek', 'Radek', 'Robert', 'Tomek', 'Zenek']
+print(tupla_imona)  # ('Radek', 'Tomek', 'Zenek', 'Olek', 'Robert', 'Michał')
+
+lista = list(tupla_imona)
+print(lista)  # ['Radek', 'Tomek', 'Zenek', 'Olek', 'Robert', 'Michał']
+print(type(lista))  # <class 'list'>
