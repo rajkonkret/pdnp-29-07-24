@@ -41,17 +41,33 @@ dict_small = {'x': 2}
 dict_small.update([('y', 3), ('z', 4)])
 print(dict_small)  # {'x': 2, 'y': 3, 'z': 4}
 
-# input() - pobiera dane od użytkownika
-tekst = input("Wpisz tekst")
-print(type(tekst))  # <class 'str'>
-print(tekst)
+# # input() - pobiera dane od użytkownika
+# tekst = input("Wpisz tekst")
+# print(type(tekst))  # <class 'str'>
+# print(tekst)
 # <class 'str'>
 # jakis tekst
 
 # aplikacja kalkulator
 # pobrac dwie liczby od uzytkownika
 # wypisac wynik obliczenia (+)
-a = input("Podaj pierwszą liczbę")
-b = float(input("Podaj drugą liczbę"))
-print("Wynik dodawania", int(a) + b)  # Wynik dodawania 11.0
-# alt shift E - uruchomienie zaznaczonego fragmentu kodu
+# a = input("Podaj pierwszą liczbę")
+# b = float(input("Podaj drugą liczbę"))
+# print("Wynik dodawania", int(a) + b)  # Wynik dodawania 11.0
+# # alt shift E - uruchomienie zaznaczonego fragmentu kodu
+
+# napisac aplikację słownik
+# powinna wyswietlic słowka, ktore umie przetłumaczyc
+# pobrac słowko od uzytkownika
+# wypisac tłumaczenie
+
+pol_ang = {'kot': 'cat', 'pies': 'dog', 'jabłko': 'apple'}  # definowanie słownika
+print("Słówka do przetłumaczenia", pol_ang.keys())  # wypisanie kluczy
+odp = input("Podaj słówko")
+# wypisanie tłumaczenia
+print(pol_ang[odp.lower().strip()])
+print(pol_ang[odp.lower().replace(" ", '')])
+print(pol_ang.get(odp, 'Brak w słowniku'))
+# cat
+# cat
+# Brak w słowniku
