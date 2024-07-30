@@ -60,3 +60,5 @@ print(lista)  # [999, 11, 44, 12.34, 18, 52, 667, 62]
 krotka = tuple(zbior)
 print(type(krotka))  # <class 'tuple'>
 print(krotka)  # (66, 999, 777, 11, 44, 12.34, 18, 52, 22, 667, 62)
+
+print(66 in zbior)  # True
