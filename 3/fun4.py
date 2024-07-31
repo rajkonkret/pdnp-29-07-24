@@ -1,5 +1,5 @@
 # funkcja wewnętrzna, zagnieżdżona
-
+# dekorator - używa mechanizmu funkcji wewnętrznej
 def fun1():
     print("To jest fun1")
 
