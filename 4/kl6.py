@@ -29,7 +29,7 @@ manager = Manager("Anna", "Nowak", 20000, 10000)
 lista_pracownicy = [pracownik, manager]
 
 for p in lista_pracownicy:
-    p.przedstaw_sie()`
+    p.przedstaw_sie()
     print("Pensja wynosi:", p.oblicz_pensje())
 
 # Mam na imię Jan Kowalski
