@@ -13,7 +13,7 @@ plt.axis('equal')
 
 plt.show()
 
-html_str = mpld3.save_html(plt.gcf(), 'plot.html')
+mpld3.save_html(plt.gcf(), 'plot.html')
 
 # with open('plot.html', "w") as f:
 #     f.write(html_str)
