@@ -119,3 +119,8 @@ spam %= 1    spam = spam % 1
 
 w3schools
 https://pl.altapps.net/soft/hackerrank-com?utm_content=cmp-true
+
+pip freeze > requirements.txt  # wysłąnie do pliku nazw i wersji pakietów
+pip list  - zainstalowane pakiety
+pip install -r .\requirements.txt - instalacja srodowiska
+
